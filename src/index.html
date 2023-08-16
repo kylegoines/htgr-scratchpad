@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <div class="container mx-auto">
+            <div
+                data-component="Dummy"
+                class="mt-space-1 f-ui-1 text-3xl font-bold underline"
+            >
+                test component
+            </div>
+        </div>
+
+        <div class="dev-tools">
+            <button
+                class="dev-tools-toggle"
+                onclick="this.nextElementSibling.hidden = !this.nextElementSibling.hidden;"
+            ></button>
+            <div class="dev-tools-grid" hidden=""></div>
+        </div>
+
+        <script type="module" src="main.js"></script>
+    </body>
+</html>

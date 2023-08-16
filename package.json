@@ -1,0 +1,26 @@
+{
+    "name": "htgr-starter",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@area17/a17-tailwind-plugins": "^3.9.0",
+        "autoprefixer": "^10.4.15",
+        "postcss": "^8.4.27",
+        "seltzer-components": "^0.1.9",
+        "tailwindcss": "^3.3.3",
+        "vite": "^4.4.9"
+    },
+    "prettier": {
+        "trailingComma": "es5",
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true
+    }
+}
