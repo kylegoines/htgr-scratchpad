@@ -3,24 +3,17 @@ const {
     Setup,
     ApplyColorVariables,
     ColorTokens,
-    Components,
     Container,
     DevTools,
     GridGap,
     GridLayout,
-    GridLine,
-    InteractionMediaQueries,
     Layout,
-    Scrollbar,
     Spacing,
     SpacingTokens,
     Typography,
-    Underline,
 } = require('@area17/a17-tailwind-plugins')
 
-// conf
 const feConfig = require('./fe.config.json')
-// console
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -32,18 +25,13 @@ module.exports = {
     plugins: [
         Setup,
         ColorTokens,
-        Components,
         Container,
         DevTools,
         GridGap,
         GridLayout,
-        GridLine,
-        InteractionMediaQueries,
         Layout,
-        Scrollbar,
         Spacing,
         Typography,
-        Underline,
     ],
     theme: {
         screens: feConfig.structure.breakpoints,
@@ -69,14 +57,6 @@ module.exports = {
             feConfig.color.tokens,
             feConfig.color.background
         ),
-        underlineColor: ApplyColorVariables(
-            feConfig.color.tokens,
-            feConfig.color.underline
-        ),
-        outlineColor: ApplyColorVariables(
-            feConfig.color.tokens,
-            feConfig.color.outlineColor
-        ),
         placeholderColor: ApplyColorVariables(
             feConfig.color.tokens,
             feConfig.color.text
@@ -93,8 +73,6 @@ module.exports = {
 
             return values
         },
-        components: feConfig.components,
-        css: feConfig.css,
         extend: {
             minHeight: ({ theme }) => theme('spacing'),
             minWidth: ({ theme }) => theme('spacing'),
